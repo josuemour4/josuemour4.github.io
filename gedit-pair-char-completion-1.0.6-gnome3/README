@@ -1,0 +1,45 @@
+Automatic pair character completion plugin for gedit
+====================================================
+
+Automatically closes brackets and quotes.
+
+Installation
+------------
+
+1. Run the install.sh script. 
+
+2. Restart gedit if it is already started.
+
+3. Select Edit->Preferences from the menu. Click on the Plugins tab and enable 
+   the "Pair Character Completion" plugin.
+
+Usage
+-----
+  
+Automatically inserts a closing parenthesis ) whenever an opening parenthesis ( 
+is typed. The default paired characters are (), [], {}, "", '', and ``. The 
+plugin is smart enough to automatically overwrite existing closing brackets 
+when appropriate.
+
+Selecting a block of text and typing an opening parenthesis or quote character 
+will enclose the selection in quotes or parenthesis.
+
+To quickly jump out of nested quotes or brackets and start a newline, type 
+Ctrl+Return. To jump to the end of the line, insert a semicolon, and start a 
+newline, type Ctrl+Shift+Return. 
+
+Custom sets of per-language pair chars are supported. To change the default 
+pair chars or add support for new languages, edit the file pair_char_lang.py.
+
+Notes
+-----
+
+* The default pair characters are: {},(),[],"",'',``
+* The default statement terminator is ';'
+
+Credits
+-------
+
+Thanks to Matěj Cepl <mcepl@redhat.com> for patch to make plugin compatible with 
+Gnome3
+

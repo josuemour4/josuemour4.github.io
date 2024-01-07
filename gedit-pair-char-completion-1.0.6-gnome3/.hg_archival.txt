@@ -1,0 +1,5 @@
+repo: cd13c650e5325df86c0a5966675c058e40ecd0f8
+node: ba23409f944dfa67736c0a134e1ed40da696bd6b
+branch: gnome3
+latesttag: null
+latesttagdistance: 22
