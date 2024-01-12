@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.7.570/build/pdf.min.js"></script>
 <!--
     
 TemplateMo 556 Catalog-Z
@@ -16,6 +17,8 @@ https://templatemo.com/tm-556-catalog-z
 -->
 </head>
 <body>
+    
+    
     <!-- Page Loader -->
     <div id="loader-wrapper">
         <div id="loader"></div>
@@ -27,14 +30,17 @@ https://templatemo.com/tm-556-catalog-z
     <!-- End Page Loader-->
 
     <nav class="navbar navbar-expand-lg">
+        
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <i class="fas fa-graduation-cap mr-2"></i>
                 Josue de Oliveira Moura
             </a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                 <li class="nav-item">
@@ -57,25 +63,21 @@ https://templatemo.com/tm-556-catalog-z
     <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/2.png"></div>
 
     <div class="container-fluid tm-mt-60">
-        <div class="row mb-4">
-            <h2 class="col-12 tm-text-primary">
-                About Catalog-Z Website Template
-            </h2>
-        </div>
+                
         <div class="row tm-mb-74 tm-row-1640">            
             <div class="col-lg-5 col-md-6 col-12 mb-3">
-                <img src="img/about.jpg" alt="Image" class="img-fluid">
-            </div>
-            <div class="col-lg-7 col-md-6 col-12">
-                <div class="tm-about-img-text">
-                    <p class="mb-4">
-                  You may support TemplateMo website by making <a href="https://paypal.me/templatemo" target="_parent" rel="sponsored">a small contribution</a> via PayPal. This will be helpful for us. We hope you like this Catalog-Z photo / video template for your website. We are making new templates regularly for you. Please come back and visit our <a rel="sponsored" href="https://templatemo.com" target="_parent">TemplateMo website</a> again. </p>
-                    <p>
-                        Credits go to Pexels and Unsplash for photos and video used in this template. Catalog-Z is free <a rel="sponsored" href="https://v5.getbootstrap.com/">Bootstrap 5</a> Alpha 2 HTML Template designed for video and photo websites.</p> 
-                    <p>You are <b>allowed</b> to use this template for your commercial or non-commercial websites. You can integrate it with any kind of CMS website. You are <b>NOT allowed</b> to redistribute the downloadable template ZIP file on any template collection website. Please <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact us</a> for more information. Thank you.</p>
-                </div>                
-            </div>
+            <!-- Div para apresentacao do curriculo-->
+            
+            <button class="button simple" id="prev">Prev</button>
+            <button class="button simple" id="next">Next</button>
+            <button class="button simple" id="zoomIn">Zoom +</button>
+            <button class="button simple" id="zoomOut">Zoom -</button>
+            <span class="tm-text-primary mb-4">Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+
+            <canvas id="pdf_canvas"></canvas>
+
         </div>
+        
         <div class="row tm-mb-50">
             <div class="col-md-6 col-12">
                 <div class="tm-about-2-col">
@@ -89,7 +91,8 @@ https://templatemo.com/tm-556-catalog-z
                         Suspendisse id consequat risus. Aliquam varius posuere nunc, nec imperdiet neque condimentum at. Aenean porta eleifend venenatis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
                     </p>
                 </div>                
-            </div> 
+            </div>
+
             <div class="col-md-6 col-12">
                 <div class="tm-about-2-col">
                     <h2 class="tm-text-primary mb-4">
@@ -104,6 +107,7 @@ https://templatemo.com/tm-556-catalog-z
                 </div>                
             </div>     
         </div> <!-- row -->
+
         <div class="row tm-mb-50">
             <div class="col-md-4 col-12">
                 <div class="tm-about-3-col">
@@ -138,6 +142,7 @@ https://templatemo.com/tm-556-catalog-z
                 </div>                
             </div>
         </div>
+        
     </div> <!-- container-fluid, tm-container-content -->
 
     <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
@@ -184,5 +189,139 @@ https://templatemo.com/tm-556-catalog-z
             $('body').addClass('loaded');
         });
     </script>
+    <script src="pdfjs-dist/build/pdf.mjs"></script>
+
+    <!--Testing-->
+    <script src="//mozilla.github.io/pdf.js/build/pdf.mjs" type="module"></script>
+
+    <script type="module">
+    // If absolute URL from the remote server is provided, configure the CORS
+    // header on that server.
+    var url = 'https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/examples/learning/helloworld.pdf';
+
+    // Loaded via <script> tag, create shortcut to access PDF.js exports.
+    var { pdfjsLib } = globalThis;
+
+    // The workerSrc property shall be specified.
+    pdfjsLib.GlobalWorkerOptions.workerSrc = '//mozilla.github.io/pdf.js/build/pdf.worker.mjs';
+
+    // Asynchronous download of PDF
+    var loadingTask = pdfjsLib.getDocument(url);
+    loadingTask.promise.then(function(pdf) {
+        console.log('PDF loaded');
+
+        // Fetch the first page
+        var pageNumber = 1;
+        pdf.getPage(pageNumber).then(function(page) {
+        console.log('Page loaded');
+
+        var scale = 1.5;
+        var viewport = page.getViewport({scale: scale});
+
+        // Prepare canvas using PDF page dimensions
+        var canvas = document.getElementById('the-canvas');
+        var context = canvas.getContext('2d');
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        // Render PDF page into canvas context
+        var renderContext = {
+            canvasContext: context,
+            viewport: viewport
+        };
+        var renderTask = page.render(renderContext);
+        renderTask.promise.then(function () {
+            console.log('Page rendered');
+        });
+        });
+    }, function (reason) {
+        // PDF loading error
+        console.error(reason);
+    });
+    </script>
+
+    <!-- Script para apresentacao do curriculo-->
+    <script>
+
+        var pdfDoc = null,
+        pageNum = 1,
+        pageRendering = false,
+        pageNumPending = null,
+        scale = 1.5,
+        canvas = document.getElementById("pdf_canvas")
+        ctx = canvas.getContext('2d')
+
+        function renderPage(num){
+            pageRendering = true
+            pdfDoc.getPage(num).then((page)=>{
+                
+                var viewport = page.getViewport({scale:scale})
+                canvas.height = viewport.height
+                canvas.width = viewport.width
+
+                var renderContext = {
+                    canvasContext:ctx,
+                    viewport: viewport
+                }
+
+                var renderTask = page.render(renderContext)
+                renderTask.promise.then(()=>{
+                    pageRendering = false;
+                    if(pageNumPending !== null){
+                        renderPage(pageNumPending)
+                        pageNumPending =null
+                    }
+                })
+                
+            })
+            document.getElementById('page_num').textContent = num;
+        }
+        
+        function queueRenderPage(num){
+            if(pageRendering){
+                pageNumPending = num
+            }else{
+                renderPage(num)
+            }
+        }
+
+        function onPrevPage(){
+            if(pageNum<=1){
+                return
+            }
+            pageNum--;
+            queueRenderPage(pageNum)
+        }
+        document.getElementById('prev').addEventListener('click',onPrevPage)
+
+        function onNextPage(){
+            if(pageNum >= pdfDoc.numPages){
+                return;
+            }
+            pageNum++;
+            queueRenderPage(pageNum)
+        }
+        document.getElementById('next').addEventListener('click',onNextPage)
+
+        function zoomOut(){
+            scale -= 0.1
+            renderPage(pageNum)
+        }
+        document.getElementById('zoomOut').addEventListener('click',zoomOut)
+
+        function zoomIn(){
+            scale += 0.1
+            renderPage(pageNum)
+        }
+        document.getElementById('zoomIn').addEventListener('click',zoomIn)
+
+        pdfjsLib.getDocument('main.pdf').promise.then((doc)=> {
+        pdfDoc = doc
+        document.getElementById('page_count').textContent = doc.numPages;
+        renderPage(pageNum)
+        })
+        
+    </script>
+    
 </body>
 </html>
