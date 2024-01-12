@@ -66,87 +66,30 @@ https://templatemo.com/tm-556-catalog-z
                 
         <div class="row tm-mb-74 tm-row-1640">            
             <div class="col-lg-5 col-md-6 col-12 mb-3">
-            <!-- Div para apresentacao do curriculo-->
-            
-            <button class="button simple" id="prev">Prev</button>
-            <button class="button simple" id="next">Next</button>
-            <button class="button simple" id="zoomIn">Zoom +</button>
-            <button class="button simple" id="zoomOut">Zoom -</button>
-            <span class="tm-text-primary mb-4">Page: <span id="page_num"></span> / <span id="page_count"></span></span>
 
-            <canvas id="pdf_canvas"></canvas>
-
-        </div>
-        
-        <div class="row tm-mb-50">
-            <div class="col-md-6 col-12">
-                <div class="tm-about-2-col">
-                    <h2 class="tm-text-primary mb-4">
-                        Left side of 2-Column content
-                    </h2>
-                    <p class="mb-4">
-                        Pellentesque urna odio, scelerisque eu mauris vitae, vestibulum sodales neque. Ut augue justo, tincidunt nec aliquet ac, cursus vel augue. Suspendisse vel quam imperdiet, sodales tellus sed, ullamcorper lorem.
-                    </p>
-                    <p>
-                        Suspendisse id consequat risus. Aliquam varius posuere nunc, nec imperdiet neque condimentum at. Aenean porta eleifend venenatis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                    </p>
-                </div>                
-            </div>
-
-            <div class="col-md-6 col-12">
-                <div class="tm-about-2-col">
-                    <h2 class="tm-text-primary mb-4">
-                        Right-side Title goes here
-                    </h2>
-                    <p class="mb-4">
-                        Pellentesque urna odio, scelerisque eu mauris vitae, vestibulum sodales neque. Ut augue justo, tincidunt nec aliquet ac, cursus vel augue. Suspendisse vel quam imperdiet, sodales tellus sed, ullamcorper lorem.
-                    </p>
-                    <p>
-                        Suspendisse id consequat risus. Aliquam varius posuere nunc, nec imperdiet neque condimentum at. Aenean porta eleifend venenatis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                    </p>
-                </div>                
-            </div>     
-        </div> <!-- row -->
-
-        <div class="row tm-mb-50">
-            <div class="col-md-4 col-12">
-                <div class="tm-about-3-col">
-                    <div class="tm-about-icon-container mb-5">
-                        <i class="fas fa-desktop fa-3x tm-text-primary"></i>
-                    </div>                
-                    <h2 class="tm-text-primary mb-4">Three-column title one</h2>
-                    <p class="mb-4">Integer tristique arcu scelerisque mauris posuere convallis. Fusce egestas ipsum sapien, hendrerit ultricies nisi viverra eget. Vestibulum in tortor eget elit rutrum interdum. </p>
-                    <p>Cras auctor velit urna, et feugiat ex tincidunt ut. Sed viverra, elit at pulvinar tristique, sem quam vehicula dolor, sed scelerisque augue mauris non dolor.</p>
-                </div>                
-            </div>
-            <div class="col-md-4 col-12">
-                <div class="tm-about-3-col">
-                    <div class="tm-about-icon-container mb-5">
-                        <i class="fas fa-mobile-alt fa-3x tm-text-primary"></i>
-                    </div>                
-                    <h2 class="tm-text-primary mb-4">Title two of three-column</h2>
-                    <p class="tm-mb-50">Donec nec est tincidunt, rhoncus nulla sit amet, imperdiet augue. Phasellus sodales placerat ipsum ac auctor. Mauris molestie blandit turpis. Mauris ante tellus, feugiat nec metus non, bibendum semper velit.</p>                
-                    <div class="text-center">
-                        <a href="#" class="btn btn-primary">Read More</a>
+                <!-- Div para apresentacao do curriculo-->
+                
+                <button class="button simple" id="prev">Prev</button>
+                <button class="button simple" id="next">Next</button>
+                <button class="button simple" id="zoomIn">Zoom +</button>
+                <button class="button simple" id="zoomOut">Zoom -</button>
+                <span class="tm-text-primary mb-4">Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+                
+                <di id="outer">
+                    <div id="inner" >
+                        <canvas id="pdf_canvas"></canvas>
                     </div>
-                </div>                
+                </di>
+            
             </div>
-            <div class="col-md-4 col-12">
-                <div class="tm-about-3-col">
-                    <div class="tm-about-icon-container mb-5">
-                        <i class="fas fa-photo-video fa-3x tm-text-primary"></i>
-                    </div>                
-                    <h2 class="tm-text-primary mb-4">Third Title goes here</h2>
-                    <p class="mb-4">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec nec est tincidunt, rhoncus nulla sit amet, imperdiet augue. </p>
-                    <p>Phasellus sodales placerat ipsum ac auctor. Mauris molestie blandit turpis. Mauris ante tellus, feugiat nec metus non, bibendum semper velit.</p>
-                </div>                
-            </div>
+
         </div>
         
     </div> <!-- container-fluid, tm-container-content -->
 
     <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
-        <div class="container-fluid tm-container-small">
+        <div class="container-fluid tm-container-small"></div>
+        
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
                     <h3 class="tm-text-primary mb-4 tm-footer-title">About Catalog-Z</h3>
@@ -189,56 +132,9 @@ https://templatemo.com/tm-556-catalog-z
             $('body').addClass('loaded');
         });
     </script>
+
     <script src="pdfjs-dist/build/pdf.mjs"></script>
 
-    <!--Testing-->
-    <script src="//mozilla.github.io/pdf.js/build/pdf.mjs" type="module"></script>
-
-    <script type="module">
-    // If absolute URL from the remote server is provided, configure the CORS
-    // header on that server.
-    var url = 'https://raw.githubusercontent.com/mozilla/pdf.js/ba2edeae/examples/learning/helloworld.pdf';
-
-    // Loaded via <script> tag, create shortcut to access PDF.js exports.
-    var { pdfjsLib } = globalThis;
-
-    // The workerSrc property shall be specified.
-    pdfjsLib.GlobalWorkerOptions.workerSrc = '//mozilla.github.io/pdf.js/build/pdf.worker.mjs';
-
-    // Asynchronous download of PDF
-    var loadingTask = pdfjsLib.getDocument(url);
-    loadingTask.promise.then(function(pdf) {
-        console.log('PDF loaded');
-
-        // Fetch the first page
-        var pageNumber = 1;
-        pdf.getPage(pageNumber).then(function(page) {
-        console.log('Page loaded');
-
-        var scale = 1.5;
-        var viewport = page.getViewport({scale: scale});
-
-        // Prepare canvas using PDF page dimensions
-        var canvas = document.getElementById('the-canvas');
-        var context = canvas.getContext('2d');
-        canvas.height = viewport.height;
-        canvas.width = viewport.width;
-
-        // Render PDF page into canvas context
-        var renderContext = {
-            canvasContext: context,
-            viewport: viewport
-        };
-        var renderTask = page.render(renderContext);
-        renderTask.promise.then(function () {
-            console.log('Page rendered');
-        });
-        });
-    }, function (reason) {
-        // PDF loading error
-        console.error(reason);
-    });
-    </script>
 
     <!-- Script para apresentacao do curriculo-->
     <script>

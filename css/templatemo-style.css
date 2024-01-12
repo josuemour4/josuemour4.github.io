@@ -814,12 +814,12 @@ body {
 }
 #outer {
     width: 500px;
-    height: 500px;
+    height: 1200px;
     display: flex;
     justify-content: center;
   }
   
-  #inner {
+#inner {
     width: 200px;
-    height: 200px;
+    height: 1000px;
   }
