@@ -9,83 +9,130 @@
     <link rel="stylesheet" href="css/templatemo-style.css">
     <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.7.570/build/pdf.min.js"></script>
 
+    <style type="text/css">
+        #galeria > div {
+
+            float: left;
+            width: 33%;
+            padding: 10px;
+            box-sizing: border-box;
+            
+        }
+
+        .foto img{
+            width: 100%;
+            display: block;
+        } 
+
+        .detalhes {
+            display: none;
+        }
+
+        #galeria .foto:target {
+            position: fixed;
+            width: 50%;
+            top: 15px;
+            left: 25%;
+            padding: 5px;
+            border: solid 1px #333;
+            box-shadow: 0 0 25px 10px #000;
+            background: #fff;
+            border-radius: 5px;
+        }
+
+        .foto:target .detalhes{
+            display: block;
+        }
+
+    </style>
+
 </head>
 <body>
-    <div class="container">
-        <div class="fotos">
-            <section>
-                <img class="animais" src="img/leao.jpg" data-id="1" alt="Leao">
-            <img class="animais" src="img/girafa.jpg" data-id="2" alt="Girafa">
-            <img class="animais" src="img/elefante.jpg" data-id="3" alt="Elefante">
-            </section>
-            
-            
-          
+
+    <div id="galeria">
+        
+        <div class="foto" id="foto1">
+            <a href="#foto1">
+                <img src="img/1.jpg" alt="foto">
+            </a>
+            <div class="detalhes">
+                Descricao da imagem<br><a href="#fechar">Fechar</a>
+            </div>
         </div>
+
+        <div class="foto" id="foto2">
+            <a href="#foto2">
+                <img src="img/1.jpg" alt="foto">
+            </a>
+            <div class="detalhes">
+                Descricao da imagem<br><a href="#fechar">Fechar</a>
+            </div>
+        </div>
+
+        <div class="foto" id="foto3">
+            <a href="#foto3">
+                <img src="img/1.jpg" alt="foto">
+            </a>
+            <div class="detalhes">
+                Descricao da imagem<br><a href="#fechar">Fechar</a>
+            </div>
+        </div>
+
+        <div class="foto" id="foto4">
+            <a href="#foto4">
+                <img src="img/1.jpg" alt="foto">
+            </a>
+            <div class="detalhes">
+                Descricao da imagem<br><a href="#fechar">Fechar</a>
+            </div>
+        </div>
+
+        <div class="foto" id="foto5">
+            <a href="#foto5">
+                <img src="img/1.jpg" alt="foto">
+            </a>
+            <div class="detalhes">
+                Descricao da imagem<br><a href="#fechar">Fechar</a>
+            </div>
+        </div>
+
+        <div class="foto" id="foto6">
+            <a href="#foto6">
+                <img src="img/1.jpg" alt="foto">
+            </a>
+            <div class="detalhes">
+                Descricao da imagem<br><a href="#fechar">Fechar</a>
+            </div>
+        </div>
+
+        <div class="foto" id="foto7">
+            <a href="#foto7">
+                <img src="img/1.jpg" alt="foto">
+            </a>
+            <div class="detalhes">
+                Descricao da imagem<br><a href="#fechar">Fechar</a>
+            </div>
+        </div>
+
+        <div class="foto" id="foto8">
+            <a href="#foto8">
+                <img src="img/1.jpg" alt="foto">
+            </a>
+            <div class="detalhes">
+                Descricao da imagem<br><a href="#fechar">Fechar</a>
+            </div>
+        </div>
+
+        <div class="foto" id="foto9">
+            <a href="#foto9">
+                <img src="img/1.jpg" alt="foto">
+            </a>
+            <div class="detalhes">
+                Descricao da imagem<br><a href="#fechar">Fechar</a>
+            </div>
+        </div>
+
     </div>
 
-    <script>
-        // Variáveis
-        const fotos = [
-            {
-            id: 1,
-            nome: "Leao",
-            src: "img/leao.jpg",
-            },
-            {
-            id: 2,
-            nome: "Girafa",
-            src: "img/girafa.jpg",
-            },
-            {
-            id: 3,
-            nome: "Elefante",
-            src: "img/elefante.jpg",
-            },
-        ];
-        
-        // Função para abrir a imagem maior
-        function abrirImagem(id) {
-            // Obtém a foto a partir do id
-            const foto = fotos.find((foto) => foto.id === id);
-        
-            // Cria uma nova div para exibir a imagem
-            const divImagem = document.createElement("div");
-            divImagem.id = "imagem-maior";
-        
-            // Cria um novo elemento img para exibir a imagem
-            const img = document.createElement("img");
-        
-            img.src = foto.src;
-        
-            // Adiciona o elemento img à div
-            divImagem.appendChild(img);
-        
-            // Cria um novo elemento p para exibir a descrição
-            const pDescricao = document.createElement("p");
-            pDescricao.textContent = foto.nome;
-        
-            // Adiciona o elemento p à div
-            divImagem.appendChild(pDescricao);
-        
-            // Adiciona a div ao DOM
-            document.body.appendChild(divImagem);
-        }
-        
-        // Evento de clique na imagem
-        document.addEventListener("click", (event) => {
-            // Verifica se o evento foi causado por um elemento img
-            
-            if (event.target.tagName === "IMG") {
-            // Obtém o id da imagem
-            
-            const id = event.target.dataset.id;
-            
-            // Abre a imagem maior
-            abrirImagem(id);
-            }
-        });
-  
-    </script>
 </body>
 </html>
