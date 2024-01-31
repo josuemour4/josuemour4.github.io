@@ -142,3 +142,65 @@ function neweraGalerrySlide(n) {
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 // new era functionality
+
+// Electada functionality
+var slideIndex = 1;
+elecdataGalerrySlide(slideIndex);
+
+function elecdataPlusSlides(n) {
+  elecdataGalerrySlide(slideIndex += n);
+}
+
+function elecdataGalerrySlide(n) {
+  elecdataGalerrySlide(slideIndex = n);
+}
+
+function elecdataGalerrySlide(n) {
+  var i;
+  var slides = document.getElementsByClassName("elecdata");
+  var dots = document.getElementsByClassName("elecdataDemo");
+  var captionText = document.getElementById("elecdataCaption");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+  captionText.innerHTML = dots[slideIndex - 1].alt;
+}
+// new Electada functionality
+
+// HTS functionality
+var slideIndex = 1;
+htsGalerrySlide(slideIndex);
+
+function htsPlusSlides(n) {
+  htsGalerrySlide(slideIndex += n);
+}
+
+function htsGalerrySlide(n) {
+  htsGalerrySlide(slideIndex = n);
+}
+
+function htsGalerrySlide(n) {
+  var i;
+  var slides = document.getElementsByClassName("hts");
+  var dots = document.getElementsByClassName("htsDemo");
+  var captionText = document.getElementById("htsCaption");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+  captionText.innerHTML = dots[slideIndex - 1].alt;
+}
+// HTS functionality
