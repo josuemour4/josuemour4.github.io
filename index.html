@@ -81,7 +81,7 @@ https://templatemo.com/tm-556-catalog-z
                 <span class="test">
                     <p>MTL-Automation</p>
                 </span>
-                <img src="img/MTL/mtl1.jpeg" style="width:100%" onclick="openModal();galerrySlide(1)"
+                <img src="img/MTL/mtl1.jpeg" style="width:100%" onclick="openModalMTL();mtlGalerrySlide(1)"
                     class="hover-shadow cursor">
             </div>
 
@@ -89,7 +89,7 @@ https://templatemo.com/tm-556-catalog-z
                 <span class="test">
                     <p>JR Electrical</p>
                 </span>
-                <img src="img/jrelectrical/emuplains5.jpeg" style="width:100%" onclick="openModal2();galerrySlideTest(1)"
+                <img src="img/jrelectrical/emuplains5.jpeg" style="width:100%" onclick="jrOpenModal();jrGalerrySlide(1)"
                     class="hover-shadow cursor">
             </div>
 
@@ -97,7 +97,7 @@ https://templatemo.com/tm-556-catalog-z
                 <span class="test">
                     <p>New era</p>
                 </span>
-                <img src="img/chullora1.jpg" style="width:100%" onclick="openModal2();galerrySlideTest(1)"
+                <img src="img/chullora1.jpg" style="width:100%" onclick="neweraOpenModal();galerrySlideTest(1)"
                     class="hover-shadow cursor">
             </div>
 
@@ -136,9 +136,9 @@ https://templatemo.com/tm-556-catalog-z
         <span></span>
 
         <!-- MTL Model -->
-        <div id="myModal" class="modal">
+        <div id="mtlModal" class="modal">
             <!-- X on the right to close the model -->
-            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <span class="close cursor" onclick="mtlCloseModal()">&times;</span>
 
             <div class="modal-content">
 
@@ -164,8 +164,8 @@ https://templatemo.com/tm-556-catalog-z
                         <img src="img/MTL/mtl4.jpeg" style="width:100%">
                     </div>
 
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <a class="prev" onclick="mtlPlusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="mtlPlusSlides(1)">&#10095;</a>
 
                     <div class="caption-container">
                         <p id="caption"></p>
@@ -176,19 +176,19 @@ https://templatemo.com/tm-556-catalog-z
                 <div>
                     <div class="column">
                         <img class="demo cursor" src="img/MTL/mtl1.jpeg" style="width:100%"
-                            onclick="galerrySlide(1)" alt="Nature and sunrise">
+                            onclick="mtlGalerrySlide(1)" alt="Nature and sunrise">
                     </div>
                     <div class="column">
                         <img class="demo cursor" src="img/MTL/mtl2.jpeg" style="width:100%"
-                            onclick="galerrySlide(2)" alt="Snow">
+                            onclick="mtlGalerrySlide(2)" alt="Snow">
                     </div>
                     <div class="column">
                         <img class="demo cursor" src="img/MTL/mtl3.jpeg" style="width:100%"
-                            onclick="galerrySlide(3)" alt="Mountains and fjords">
+                            onclick="mtlGalerrySlide(3)" alt="Mountains and fjords">
                     </div>
                     <div class="column">
                         <img class="demo cursor" src="img/MTL/mtl4.jpeg" style="width:100%"
-                            onclick="galerrySlide(4)" alt="Northern Lights">
+                            onclick="mtlGalerrySlide(4)" alt="Northern Lights">
                     </div>
                 </div>
 
@@ -197,67 +197,130 @@ https://templatemo.com/tm-556-catalog-z
         <!-- End MTL Model -->
 
         <!-- JR Electrical Model -->
-        <div id="myModal2" class="modal">
+        <div id="jrModal" class="modal">
             <!-- X on the right to close the model -->
-            <span class="close cursor" onclick="closeModal2()">&times;</span>
+            <span class="close cursor" onclick="jrCloseModal()">&times;</span>
 
             <div class="modal-content">
 
                 <div>
 
 
-                    <div class="gallery2">
+                    <div class="jrElectrical">
                         <div class="numbertext">1 / 4</div>
                         <img src="img/jrelectrical/emuplains1.jpeg" style="width:100%">
                     </div>
 
-                    <div class="gallery2">
+                    <div class="jrElectrical">
                         <div class="numbertext">2 / 4</div>
                         <img src="img/jrelectrical/emuplains2.jpeg" style="width:100%">
                     </div>
 
-                    <div class="gallery2">
+                    <div class="jrElectrical">
                         <div class="numbertext">3 / 4</div>
                         <img src="img/jrelectrical/emuplains3.jpeg" style="width:100%">
                     </div>
 
-                    <div class="gallery2">
+                    <div class="jrElectrical">
                         <div class="numbertext">4 / 4</div>
                         <img src="img/jrelectrical/emuplains4.jpeg" style="width:100%">
                     </div>
 
-                    <a class="prev" onclick="plusSlidesTest(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlidesTest(1)">&#10095;</a>
+                    <a class="prev" onclick="jrPlusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="jrPlusSlides(1)">&#10095;</a>
 
                 </div>
 
                 <div class="caption-container">
-                    <p id="caption2"></p>
+                    <p id="jrCaption"></p>
                 </div>
 
 
                 <div>
                     <div class="column">
-                        <img class="demo2 cursor" src="img/jrelectrical/emuplains1.jpeg" style="width:100%"
-                            onclick="galerrySlideTest(1)" alt="Running and tined cable on the cable tray fixed on wall">
+                        <img class="demo jrDemo cursor" src="img/jrelectrical/emuplains1.jpeg" style="width:100%"
+                            onclick="jrGalerrySlide(1)" alt="Running and tined cable on the cable tray fixed on wall">
                     </div>
                     <div class="column">
-                        <img class="demo2 cursor" src="img/jrelectrical/emuplains2.jpeg" style="width:100%"
-                            onclick="galerrySlideTest(2)" alt="Assembling and installing tray">
+                        <img class="demo jrDemo  cursor" src="img/jrelectrical/emuplains2.jpeg" style="width:100%"
+                            onclick="jrGalerrySlide(2)" alt="Assembling and installing tray">
                     </div>
                     <div class="column">
-                        <img class="demo2 cursor" src="img/jrelectrical/emuplains3.jpeg" style="width:100%"
-                            onclick="galerrySlideTest(3)" alt="Assembling and installing tray">
+                        <img class="demo jrDemo cursor" src="img/jrelectrical/emuplains3.jpeg" style="width:100%"
+                            onclick="jrGalerrySlide(3)" alt="Assembling and installing tray">
                     </div>
                     <div class="column">
-                        <img class="demo2 cursor" src="img/jrelectrical/emuplains4.jpeg" style="width:100%"
-                            onclick="galerrySlideTest(4)" alt="Assembling and installing tray">
+                        <img class="demo jrDemo cursor" src="img/jrelectrical/emuplains4.jpeg" style="width:100%"
+                            onclick="jrGalerrySlide(4)" alt="Assembling and installing tray">
                     </div>
 
                 </div>
             </div>
         </div>
         <!-- End JR Electrical Model -->
+
+         <!-- New era Model -->
+         <div id="neweraModal" class="modal">
+            <!-- X on the right to close the model -->
+            <span class="close cursor" onclick="neweraCloseModal()">&times;</span>
+
+            <div class="modal-content">
+
+                <div>
+
+
+                    <div class="newera">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="img/newera/newera1.jpeg" style="width:100%">
+                    </div>
+
+                    <div class="newera">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="img/newera/newera2.jpeg" style="width:100%">
+                    </div>
+
+                    <div class="newera">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="img/newera/newera3.jpeg" style="width:100%">
+                    </div>
+
+                    <div class="newera">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="img/newera/newera4.jpeg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="neweraPlusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="neweraPlusSlides(1)">&#10095;</a>
+
+                </div>
+
+                <div class="caption-container">
+                    <p id="neweraCaption"></p>
+                </div>
+
+
+                <div>
+                    <div class="column">
+                        <img class="demo neweraDemo cursor" src="img/newera/newera1.jpeg" style="width:100%"
+                            onclick="jrGalerrySlide(1)" alt="Running and tined cable on the cable tray fixed on wall">
+                    </div>
+                    <div class="column">
+                        <img class="demo neweraDemo  cursor" src="img/newera/newera2.jpeg" style="width:100%"
+                            onclick="jrGalerrySlide(2)" alt="Assembling and installing tray">
+                    </div>
+                    <div class="column">
+                        <img class="demo neweraDemo cursor" src="img/newera/newera3.jpeg" style="width:100%"
+                            onclick="jrGalerrySlide(3)" alt="Assembling and installing tray">
+                    </div>
+                    <div class="column">
+                        <img class="demo neweraDemo cursor" src="img/newera/newera4.jpeg" style="width:100%"
+                            onclick="jrGalerrySlide(4)" alt="Assembling and installing tray">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- New era Model Model -->
 
     </div> <!-- container-fluid, tm-container-content -->
     <!-- End Gallery -->

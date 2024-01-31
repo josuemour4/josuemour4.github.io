@@ -133,15 +133,6 @@
       opacity: 1;
     }
 
-    .demo2 {
-      opacity: 0.6;
-    }
-
-    .active,
-    .demo2:hover {
-      opacity: 1;
-    }
-
     img.hover-shadow {
       transition: 0.3s;
     }
