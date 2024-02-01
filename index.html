@@ -75,9 +75,9 @@ https://templatemo.com/tm-556-catalog-z
     <div class="container-fluid tm-container-content tm-mt-60">
 
         <!-- Row -->
-        <div class="row container-fluid">
+        <div class="row tm-mb-74 tm-people-row">
 
-            <div class="column">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
                 <span class="test">
                     <p>MTL-Automation</p>
                 </span>
@@ -85,7 +85,7 @@ https://templatemo.com/tm-556-catalog-z
                     class="hover-shadow cursor">
             </div>
 
-            <div class="column">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
                 <span class="test">
                     <p>JR Electrical</p>
                 </span>
@@ -93,7 +93,7 @@ https://templatemo.com/tm-556-catalog-z
                     class="hover-shadow cursor">
             </div>
 
-            <div class="column">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
                 <span class="test">
                     <p>New era</p>
                 </span>
@@ -101,7 +101,7 @@ https://templatemo.com/tm-556-catalog-z
                     class="hover-shadow cursor">
             </div>
 
-            <div class="column">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
                 <span class="test">
                     <p>Electada</p>
                 </span>
@@ -109,12 +109,7 @@ https://templatemo.com/tm-556-catalog-z
                     class="hover-shadow cursor">
             </div>
 
-        </div>
-        <div>
-
-        </div>
-        <div class="row container-fluid tm-mt-60">
-            <div class="column">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
                 <span class="test">
                     <p>Health Trade Services</p>
                 </span>
@@ -122,21 +117,29 @@ https://templatemo.com/tm-556-catalog-z
                     class="hover-shadow cursor">
             </div>
 
-            <div class="column">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
                 <span class="test">
                     <p>Ryan Wilks</p>
                 </span>
-                <img src="img/RW/RW1.jpeg" style="width:100%" onclick="openModal2();galerrySlideTest(1)"
+                <img src="img/RW/RW1.jpeg" style="width:100%" onclick="rwOpenModal();galerrySlideTest(1)"
                     class="hover-shadow cursor">
             </div>
 
-            <div class="column">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
                 <span class="test">
                     <p>CESA</p>
                 </span>
-                <img src="img/CESA/cesa1.jpeg" style="width:100%" onclick="openModal2();galerrySlideTest(1)"
+                <img src="img/CESA/cesa1.jpeg" style="width:100%" onclick="cesaOpenModal();galerrySlideTest(1)"
                     class="hover-shadow cursor">
             </div>
+
+        </div>
+        <div>
+
+        </div>
+        <div class="crow tm-mb-74 tm-people-row">
+
+            
 
         </div>
 
@@ -455,7 +458,133 @@ https://templatemo.com/tm-556-catalog-z
                 </div>
             </div>
         </div>
-        <!-- Health Trade Services -->
+        <!-- End Health Trade Services -->
+
+         <!-- Ryan Wilks -->
+         <div id="rwModal" class="modal">
+            <!-- X on the right to close the model -->
+            <span class="close cursor" onclick="rwCloseModal()">&times;</span>
+
+            <div class="modal-content">
+
+                <div>
+
+
+                    <div class="rw">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="img/RW/RW1.jpeg" style="width:100%">
+                    </div>
+
+                    <div class="rw">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="img/RW/RW2.jpeg" style="width:100%">
+                    </div>
+
+                    <div class="rw">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="img/RW/RW3.jpeg" style="width:100%">
+                    </div>
+
+                    <div class="rw">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="img/RW/RW4.jpeg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="rwPlusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="rwPlusSlides(1)">&#10095;</a>
+
+                </div>
+
+                <div class="caption-container">
+                    <p id="rwCaption"></p>
+                </div>
+
+
+                <div>
+                    <div class="column">
+                        <img class="demo rwDemo cursor" src="img/RW/RW1.jpeg" style="width:100%"
+                            onclick="rwGalerrySlide(1)" alt="Running and tined cable on the cable tray fixed on wall">
+                    </div>
+                    <div class="column">
+                        <img class="demo rwDemo  cursor" src="img/RW/RW2.jpeg" style="width:100%"
+                            onclick="rwGalerrySlideGalerrySlide(2)" alt="Assembling and installing tray">
+                    </div>
+                    <div class="column">
+                        <img class="demo rwDemo cursor" src="img/RW/RW3.jpeg" style="width:100%"
+                            onclick="rwGalerrySlideGalerrySlide(3)" alt="Assembling and installing tray">
+                    </div>
+                    <div class="column">
+                        <img class="demo rwDemo cursor" src="img/RW/RW4.jpeg" style="width:100%"
+                            onclick="rwGalerrySlideGalerrySlide(4)" alt="Assembling and installing tray">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- End Ryan Wilks -->
+
+        <!-- CESA -->
+        <div id="cesaModal" class="modal">
+            <!-- X on the right to close the model -->
+            <span class="close cursor" onclick="cesaCloseModal()">&times;</span>
+
+            <div class="modal-content">
+
+                <div>
+
+
+                    <div class="cesa">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="img/CESA/cesa1.jpeg" style="width:100%">
+                    </div>
+
+                    <div class="cesa">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="img/CESA/cesa2.jpeg" style="width:100%">
+                    </div>
+
+                    <div class="cesa">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="img/CESA/cesa3.jpeg" style="width:100%">
+                    </div>
+
+                    <div class="cesa">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="img/CESA/cesa4.jpeg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="cesaPlusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="cesaPlusSlides(1)">&#10095;</a>
+
+                </div>
+
+                <div class="caption-container">
+                    <p id="cesaCaption"></p>
+                </div>
+
+
+                <div>
+                    <div class="column">
+                        <img class="demo cesaDemo cursor" src="img/CESA/cesa1.jpeg" style="width:100%"
+                            onclick="rwGalerrySlide(1)" alt="Running and tined cable on the cable tray fixed on wall">
+                    </div>
+                    <div class="column">
+                        <img class="demo cesaDemo  cursor" src="img/CESA/cesa2.jpeg" style="width:100%"
+                            onclick="rwGalerrySlideGalerrySlide(2)" alt="Assembling and installing tray">
+                    </div>
+                    <div class="column">
+                        <img class="demo cesaDemo cursor" src="img/CESA/cesa3.jpeg" style="width:100%"
+                            onclick="rwGalerrySlideGalerrySlide(3)" alt="Assembling and installing tray">
+                    </div>
+                    <div class="column">
+                        <img class="demo cesaDemo cursor" src="img/CESA/cesa4.jpeg" style="width:100%"
+                            onclick="rwGalerrySlideGalerrySlide(4)" alt="Assembling and installing tray">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- End CESA -->
 
     </div> <!-- container-fluid, tm-container-content -->
     <!-- End Gallery -->

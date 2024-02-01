@@ -22,6 +22,10 @@ function htsOpenModal() {
 function rwOpenModal() {
   document.getElementById("rwModal").style.display = "block";
 }
+
+function cesaOpenModal() {
+  document.getElementById("cesaModal").style.display = "block";
+}
 //End Open Modal functions
 
 //Close Modal functions
@@ -45,6 +49,10 @@ function htsCloseModal() {
 
 function rwCloseModal() {
   document.getElementById("rwModal").style.display = "none";
+}
+
+function cesaCloseModal() {
+  document.getElementById("cesaModal").style.display = "none";
 }
 //End Close Modal functions
 
@@ -203,4 +211,66 @@ function htsGalerrySlide(n) {
   dots[slideIndex - 1].className += " active";
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
-// HTS functionality
+// End HTS functionality
+
+// RW functionality
+var slideIndex = 1;
+rwGalerrySlide(slideIndex);
+
+function rwPlusSlides(n) {
+  rwGalerrySlide(slideIndex += n);
+}
+
+function htsGalerrySlide(n) {
+  rwGalerrySlide(slideIndex = n);
+}
+
+function rwGalerrySlide(n) {
+  var i;
+  var slides = document.getElementsByClassName("rw");
+  var dots = document.getElementsByClassName("rwDemo");
+  var captionText = document.getElementById("rwCaption");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+  captionText.innerHTML = dots[slideIndex - 1].alt;
+}
+// End RW functionality
+
+// CESA functionality
+var slideIndex = 1;
+cesaGalerrySlide(slideIndex);
+
+function cesaPlusSlides(n) {
+  cesaGalerrySlide(slideIndex += n);
+}
+
+function cesaGalerrySlide(n) {
+  cesaGalerrySlide(slideIndex = n);
+}
+
+function cesaGalerrySlide(n) {
+  var i;
+  var slides = document.getElementsByClassName("cesa");
+  var dots = document.getElementsByClassName("cesaDemo");
+  var captionText = document.getElementById("cesaCaption");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+  captionText.innerHTML = dots[slideIndex - 1].alt;
+}
+// End CESA functionality
