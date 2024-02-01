@@ -143,11 +143,25 @@
 
     .test {
       text-align: center;
-      background-color: #5719a7;
+      background-color: #3669da;
     }
 
     .test p {
       letter-spacing: 2px;
       line-height: 1.8;
       color: #5719a7;
+    }
+
+    .projects {
+
+      color: white;
+      text-align: center;
+      background-color: #325dac;
+      letter-spacing: 1px;
+      font-size: 150%;
+    }
+
+    .projects p {
+      letter-spacing: 1px;
+      font-size: 68.5%;
     }
