@@ -165,3 +165,8 @@
       letter-spacing: 1px;
       font-size: 68.5%;
     }
+
+
+    ul#menu li {
+      display:inline;
+    }

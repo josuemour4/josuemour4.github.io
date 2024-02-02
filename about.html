@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josue Moura</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
     <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.7.570/build/pdf.min.js"></script>
@@ -68,16 +70,19 @@ https://templatemo.com/tm-556-catalog-z
 
         <div class="row tm-mb-74 tm-row-1640">
 
-
-            <button class="button simple" id="prev">Prev</button>
-            <button class="button simple" id="next">Next</button>
-            <button class="button simple" id="zoomIn">Zoom +</button>
-            <button class="button simple" id="zoomOut">Zoom -</button>
-            <span class="tm-text-primary mb-4">Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+            <ul id="menu">
+                <li> <button class="button simple" id="prev">Prev</button></li>
+                <li><button class="button simple" id="next">Next</button></li>
+                <li><button class="button simple" id="zoomIn">Zoom +</button></li>
+                <li><button class="button simple" id="zoomOut">Zoom -</button></li>
+                <li><span class="tm-text-primary mb-4">Page: <span id="page_num"></span> / <span id="page_count"></span></span></li>                
+            </ul>
 
             <canvas id="pdf_canvas"></canvas>
 
-        </div> <!-- container-fluid, tm-container-content -->
+        <div>
+
+    </div> <!-- container-fluid, tm-container-content -->
 
         <footer class="tm-bg-gray pt-5 pb-3 tm-text-gray tm-footer">
             <div class="container-fluid tm-container-small"></div>
