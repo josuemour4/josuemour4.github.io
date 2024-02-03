@@ -74,7 +74,7 @@ https://templatemo.com/tm-556-catalog-z
     <!-- Test -->
 
     <div class="container-fluid tm-container-content">
-        
+
         <div class="row">
             <p class="projects tm-text-gray">Photo gallery</p>
         </div>
@@ -87,46 +87,14 @@ https://templatemo.com/tm-556-catalog-z
     <!-- Gallery -->
     <div class="container-fluid tm-container-content tm-mt-60">
 
-        <!-- Row -->
+        <!-- Gallery selection -->
         <div class="row tm-mb-74 tm-people-row">
 
             <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
-                <span class="test"> 
-                    <p>MTL-Automation</p>
-                </span>
-                <img src="img/MTL/mtl1.jpeg" style="width:100%" onclick="openModalMTL();mtlGalerrySlide(1)"
-                    class="hover-shadow cursor">
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
                 <span class="test">
-                    <p>JR Electrical</p>
+                    <p>CESA</p>
                 </span>
-                <img src="img/jrelectrical/emuplains1.jpeg" style="width:100%" onclick="jrOpenModal();jrGalerrySlide(1)"
-                    class="hover-shadow cursor">
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
-                <span class="test">
-                    <p>New era</p>
-                </span>
-                <img src="img/newera/newera1.jpeg" style="width:100%" onclick="neweraOpenModal();electadaGalerrySlide(1);"
-                    class="hover-shadow cursor">
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
-                <span class="test">
-                    <p>Electada</p>
-                </span>
-                <img src="img/elecdata/elecdata1.jpeg" style="width:100%" onclick="elecdataOpenModal();galerrySlideTest(1)"
-                    class="hover-shadow cursor">
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
-                <span class="test">
-                    <p>Health Trade Services</p>
-                </span>
-                <img src="img/HTS/HTS1.jpeg" style="width:100%" onclick="htsOpenModal();galerrySlideTest(1)"
+                <img src="img/CESA/cesa1.jpeg" style="width:100%" onclick="cesaOpenModal();cesaCurrentSlide(1)"
                     class="hover-shadow cursor">
             </div>
 
@@ -134,26 +102,55 @@ https://templatemo.com/tm-556-catalog-z
                 <span class="test">
                     <p>Ryan Wilks</p>
                 </span>
-                <img src="img/RW/RW1.jpeg" style="width:100%" onclick="rwOpenModal();galerrySlideTest(1)"
+                <img src="img/RW/RW1.jpeg" style="width:100%" onclick="rwOpenModal();rwCurrentSlide(1)"
+                    class="hover-shadow cursor">
+            </div>
+            
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+                <span class="test">
+                    <p>Health Trade</p>
+                </span>
+                <img src="img/HTS/HTS1.jpeg" style="width:100%"
+                    onclick="healthTradeOpenModal();healthTradeCurrentSlide(1)" class="hover-shadow cursor">
+            </div>            
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+                <span class="test">
+                    <p>Electada</p>
+                </span>
+                <img src="img/elecdata/elecdata1.jpeg" style="width:100%"
+                    onclick="elecdataOpenModal();electadaCurrentSlide(1)" class="hover-shadow cursor">
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+                <span class="test">
+                    <p>New era</p>
+                </span>
+                <img src="img/newera/newera1.jpeg" style="width:100%"
+                    onclick="neweraOpenModal();neweraCurrentSlide(1);" class="hover-shadow cursor">
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+                <span class="test">
+                    <p>JR Electrical</p>
+                </span>
+                <img src="img/jrelectrical/emuplains1.jpeg" style="width:100%" onclick="jrOpenModal();jrCurrentSlide(1)"
                     class="hover-shadow cursor">
             </div>
 
             <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
                 <span class="test">
-                    <p>CESA</p>
+                    <p>MTL-Automation</p>
                 </span>
-                <img src="img/CESA/cesa1.jpeg" style="width:100%" onclick="cesaOpenModal();galerrySlideTest(1)"
+                <img src="img/MTL/mtl1.jpeg" style="width:100%" onclick="openModalMTL();mtlCurrentSlide(1)"
                     class="hover-shadow cursor">
             </div>
 
-        </div>
-        <div>
-
-        </div>
-        <div class="crow tm-mb-74 tm-people-row">
-
             
-
+        </div>
+        <!-- End Gallery selection -->
+        
+        <div class="crow tm-mb-74 tm-people-row">
         </div>
 
         <br>
@@ -200,20 +197,20 @@ https://templatemo.com/tm-556-catalog-z
 
                 <div>
                     <div class="column">
-                        <img class="demo cursor" src="img/MTL/mtl1.jpeg" style="width:100%" onclick="mtlGalerrySlide(1)"
-                            alt="Nature and sunrise">
+                        <img class="demo cursor" src="img/MTL/mtl1.jpeg" style="width:100%" onclick="mtlCurrentSlide(1)"
+                            alt="Testing network operation">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="img/MTL/mtl2.jpeg" style="width:100%" onclick="mtlGalerrySlide(2)"
-                            alt="Snow">
+                        <img class="demo cursor" src="img/MTL/mtl2.jpeg" style="width:100%" onclick="mtlCurrentSlide(2)"
+                            alt="rack installation and data cable terminating">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="img/MTL/mtl3.jpeg" style="width:100%" onclick="mtlGalerrySlide(3)"
-                            alt="Mountains and fjords">
+                        <img class="demo cursor" src="img/MTL/mtl3.jpeg" style="width:100%" onclick="mtlCurrentSlide(3)"
+                            alt="Running and dressing the data cable">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="img/MTL/mtl4.jpeg" style="width:100%" onclick="mtlGalerrySlide(4)"
-                            alt="Northern Lights">
+                        <img class="demo cursor" src="img/MTL/mtl4.jpeg" style="width:100%" onclick="mtlCurrentSlide(4)"
+                            alt="Running and dressing the data cable">
                     </div>
                 </div>
 
@@ -264,19 +261,19 @@ https://templatemo.com/tm-556-catalog-z
                 <div>
                     <div class="column">
                         <img class="demo jrDemo cursor" src="img/jrelectrical/emuplains1.jpeg" style="width:100%"
-                            onclick="jrGalerrySlide(1)" alt="Running and tined cable on the cable tray fixed on wall">
+                            onclick="jrCurrentSlide(1)" alt="Disconnecting and relocating temporary board.">
                     </div>
                     <div class="column">
                         <img class="demo jrDemo  cursor" src="img/jrelectrical/emuplains2.jpeg" style="width:100%"
-                            onclick="jrGalerrySlide(2)" alt="Assembling and installing tray">
+                            onclick="jrCurrentSlide(2)" alt="Assembling and installing tray and running cable.">
                     </div>
                     <div class="column">
                         <img class="demo jrDemo cursor" src="img/jrelectrical/emuplains3.jpeg" style="width:100%"
-                            onclick="jrGalerrySlide(3)" alt="Assembling and installing tray">
+                            onclick="jrCurrentSlide(3)" alt="Arranging the cables in their places and removing the insulation for fit out.">
                     </div>
                     <div class="column">
                         <img class="demo jrDemo cursor" src="img/jrelectrical/emuplains4.jpeg" style="width:100%"
-                            onclick="jrGalerrySlide(4)" alt="Assembling and installing tray">
+                            onclick="jrCurrentSlide(4)" alt="Assembling and installing tray and running cable.">
                     </div>
 
                 </div>
@@ -327,19 +324,19 @@ https://templatemo.com/tm-556-catalog-z
                 <div>
                     <div class="column">
                         <img class="demo neweraDemo cursor" src="img/newera/newera1.jpeg" style="width:100%"
-                            onclick="jrGalerrySlide(1)" alt="Running and tined cable on the cable tray fixed on wall">
+                            onclick="neweraCurrentSlide(1)" alt="Digging and assembling of conduits outside for ELV lights, data and power.">
                     </div>
                     <div class="column">
                         <img class="demo neweraDemo  cursor" src="img/newera/newera2.jpeg" style="width:100%"
-                            onclick="jrGalerrySlide(2)" alt="Assembling and installing tray">
+                            onclick="neweraCurrentSlide(2)" alt="Digging and assembling of conduits outside for ELV lights, data and power.">
                     </div>
                     <div class="column">
                         <img class="demo neweraDemo cursor" src="img/newera/newera3.jpeg" style="width:100%"
-                            onclick="jrGalerrySlide(3)" alt="Assembling and installing tray">
+                            onclick="neweraCurrentSlide(3)" alt="Digging and assembling of conduits outside for ELV lights, data and power.">
                     </div>
                     <div class="column">
                         <img class="demo neweraDemo cursor" src="img/newera/newera4.jpeg" style="width:100%"
-                            onclick="jrGalerrySlide(4)" alt="Assembling and installing tray">
+                            onclick="neweraCurrentSlide(4)" alt="Running cables in chased wall.">
                     </div>
 
                 </div>
@@ -390,19 +387,20 @@ https://templatemo.com/tm-556-catalog-z
                 <div>
                     <div class="column">
                         <img class="demo elecdataDemo cursor" src="img/elecdata/elecdata1.jpeg" style="width:100%"
-                            onclick="elecdataGalerrySlide(1)" alt="Running and tined cable on the cable tray fixed on wall">
+                            onclick="elecdataCurrentSlide(1)"
+                            alt="Assembly and installation of electrical tray">
                     </div>
                     <div class="column">
                         <img class="demo elecdataDemo  cursor" src="img/elecdata/elecdata2.jpeg" style="width:100%"
-                            onclick="elecdataGalerrySlide(2)" alt="Assembling and installing tray">
+                            onclick="elecdataCurrentSlide(2)" alt="Running cables for lights, emergency, sighs and power">
                     </div>
                     <div class="column">
                         <img class="demo elecdataDemo cursor" src="img/elecdata/elecdata3.jpeg" style="width:100%"
-                            onclick="elecdataGalerrySlide(3)" alt="Assembling and installing tray">
+                            onclick="elecdataCurrentSlide(3)" alt="Assembly and installation of electrical tray">
                     </div>
                     <div class="column">
                         <img class="demo elecdataDemo cursor" src="img/elecdata/elecdata4.jpeg" style="width:100%"
-                            onclick="elecdataGalerrySlide(4)" alt="Assembling and installing tray">
+                            onclick="elecdataCurrentSlide(4)" alt="Assembly and installation of electrical tray">
                     </div>
 
                 </div>
@@ -410,71 +408,8 @@ https://templatemo.com/tm-556-catalog-z
         </div>
         <!-- End Elecdata Model Model -->
 
-        <!-- Health Trade Services -->
-        <div id="htsModal" class="modal">
-            <!-- X on the right to close the model -->
-            <span class="close cursor" onclick="htsCloseModal()">&times;</span>
-
-            <div class="modal-content">
-
-                <div>
-
-
-                    <div class="hts">
-                        <div class="numbertext">1 / 4</div>
-                        <img src="img/HTS/HTS1.jpeg" style="width:100%">
-                    </div>
-
-                    <div class="hts">
-                        <div class="numbertext">2 / 4</div>
-                        <img src="img/HTS/HTS2.jpeg" style="width:100%">
-                    </div>
-
-                    <div class="hts">
-                        <div class="numbertext">3 / 4</div>
-                        <img src="img/HTS/HTS3.jpeg" style="width:100%">
-                    </div>
-
-                    <div class="hts">
-                        <div class="numbertext">4 / 4</div>
-                        <img src="img/HTS/HTS4.jpeg" style="width:100%">
-                    </div>
-
-                    <a class="prev" onclick="htsPlusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="htsPlusSlides(1)">&#10095;</a>
-
-                </div>
-
-                <div class="caption-container">
-                    <p id="htsCaption"></p>
-                </div>
-
-
-                <div>
-                    <div class="column">
-                        <img class="demo htsDemo cursor" src="img/HTS/HTS1.jpeg" style="width:100%"
-                            onclick="htsGalerrySlide(1)" alt="Running and tined cable on the cable tray fixed on wall">
-                    </div>
-                    <div class="column">
-                        <img class="demo htsDemo  cursor" src="img/HTS/HTS2.jpeg" style="width:100%"
-                            onclick="htsGalerrySlideGalerrySlide(2)" alt="Assembling and installing tray">
-                    </div>
-                    <div class="column">
-                        <img class="demo htsDemo cursor" src="img/HTS/HTS3.jpeg" style="width:100%"
-                            onclick="htsGalerrySlideGalerrySlide(3)" alt="Assembling and installing tray">
-                    </div>
-                    <div class="column">
-                        <img class="demo htsDemo cursor" src="img/HTS/HTS4.jpeg" style="width:100%"
-                            onclick="htsGalerrySlideGalerrySlide(4)" alt="Assembling and installing tray">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- End Health Trade Services -->
-
-         <!-- Ryan Wilks -->
-         <div id="rwModal" class="modal">
+        <!-- Ryan Wilks -->
+        <div id="rwModal" class="modal">
             <!-- X on the right to close the model -->
             <span class="close cursor" onclick="rwCloseModal()">&times;</span>
 
@@ -516,25 +451,88 @@ https://templatemo.com/tm-556-catalog-z
                 <div>
                     <div class="column">
                         <img class="demo rwDemo cursor" src="img/RW/RW1.jpeg" style="width:100%"
-                            onclick="rwGalerrySlide(1)" alt="Running and tined cable on the cable tray fixed on wall">
+                            onclick="rwCurrentSlide(1)" alt="Running and tined cable on the cable tray fixed on wall">
                     </div>
                     <div class="column">
                         <img class="demo rwDemo  cursor" src="img/RW/RW2.jpeg" style="width:100%"
-                            onclick="rwGalerrySlideGalerrySlide(2)" alt="Assembling and installing tray">
+                            onclick="rwCurrentSlide(2)" alt="Running, stripping and terminating cable.">
                     </div>
                     <div class="column">
                         <img class="demo rwDemo cursor" src="img/RW/RW3.jpeg" style="width:100%"
-                            onclick="rwGalerrySlideGalerrySlide(3)" alt="Assembling and installing tray">
+                            onclick="rwCurrentSlide(3)" alt="Running and tined cable on the cable tray fixed on wall">
                     </div>
                     <div class="column">
                         <img class="demo rwDemo cursor" src="img/RW/RW4.jpeg" style="width:100%"
-                            onclick="rwGalerrySlideGalerrySlide(4)" alt="Assembling and installing tray">
+                            onclick="rwCurrentSlide(4)" alt="Running cables underground">
                     </div>
 
                 </div>
             </div>
         </div>
         <!-- End Ryan Wilks -->
+
+        <!-- Health Trade -->
+        <div id="healthTrade" class="modal">
+            <!-- X on the right to close the model -->
+            <span class="close cursor" onclick="healthTradeCloseModal()">&times;</span>
+
+            <div class="modal-content">
+
+                <div>
+
+
+                    <div class="healthTrade">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="img/HTS/HTS1.jpeg" style="width:100%">
+                    </div>
+
+                    <div class="healthTrade">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="img/HTS/HTS2.jpeg" style="width:100%">
+                    </div>
+
+                    <div class="healthTrade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="img/HTS/HTS3.jpeg" style="width:100%">
+                    </div>
+
+                    <div class="healthTrade">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="img/HTS/HTS4.jpeg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="healthTradePlusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="healthTradePlusSlides(1)">&#10095;</a>
+
+                </div>
+
+                <div class="caption-container">
+                    <p id="healthTradeCaption"></p>
+                </div>
+
+
+                <div>
+                    <div class="column">
+                        <img class="demo healthTradeDemo cursor" src="img/HTS/HTS1.jpeg" style="width:100%"
+                            onclick="healthTradeCurrentSlide(1)" alt="Cable termination and nurse call installation">
+                    </div>
+                    <div class="column">
+                        <img class="demo healthTradeDemo  cursor" src="img/HTS/HTS2.jpeg" style="width:100%"
+                            onclick="healthTradeCurrentSlide(2)" alt="Running data cable and fire sealed">
+                    </div>
+                    <div class="column">
+                        <img class="demo healthTradeDemo cursor" src="img/HTS/HTS3.jpeg" style="width:100%"
+                            onclick="healthTradeCurrentSlide(3)" alt="Rack installation">
+                    </div>
+                    <div class="column">
+                        <img class="demo healthTradeDemo cursor" src="img/HTS/HTS4.jpeg" style="width:100%"
+                            onclick="healthTradeCurrentSlide(4)" alt="Testing nurse call network">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Health Trade -->
 
         <!-- CESA -->
         <div id="cesaModal" class="modal">
@@ -579,19 +577,19 @@ https://templatemo.com/tm-556-catalog-z
                 <div>
                     <div class="column">
                         <img class="demo cesaDemo cursor" src="img/CESA/cesa1.jpeg" style="width:100%"
-                            onclick="rwGalerrySlide(1)" alt="Running and tined cable on the cable tray fixed on wall">
+                            onclick="cesaCurrentSlide(1)" alt="Disconnecting and relocating the temporary board">
                     </div>
                     <div class="column">
                         <img class="demo cesaDemo  cursor" src="img/CESA/cesa2.jpeg" style="width:100%"
-                            onclick="rwGalerrySlideGalerrySlide(2)" alt="Assembling and installing tray">
+                            onclick="cesaCurrentSlide(2)" alt="Connecting temporary board">
                     </div>
                     <div class="column">
                         <img class="demo cesaDemo cursor" src="img/CESA/cesa3.jpeg" style="width:100%"
-                            onclick="rwGalerrySlideGalerrySlide(3)" alt="Assembling and installing tray">
+                            onclick="cesaCurrentSlide(3)" alt="Running mechanical and the main cables from the MSB to DB">
                     </div>
                     <div class="column">
                         <img class="demo cesaDemo cursor" src="img/CESA/cesa4.jpeg" style="width:100%"
-                            onclick="rwGalerrySlideGalerrySlide(4)" alt="Assembling and installing tray">
+                            onclick="cesaCurrentSlide(4)" alt="Running lights and power point cables">
                     </div>
 
                 </div>

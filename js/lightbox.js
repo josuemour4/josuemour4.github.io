@@ -15,16 +15,16 @@ function elecdataOpenModal() {
   document.getElementById("elecdataModal").style.display = "block";
 }
 
-function htsOpenModal() {
-  document.getElementById("htsModal").style.display = "block";
-}
-
 function rwOpenModal() {
   document.getElementById("rwModal").style.display = "block";
 }
 
 function cesaOpenModal() {
   document.getElementById("cesaModal").style.display = "block";
+}
+
+function healthTradeOpenModal() {
+  document.getElementById("healthTrade").style.display = "block";
 }
 //End Open Modal functions
 
@@ -43,10 +43,6 @@ function elecdataCloseModal() {
   document.getElementById("elecdataModal").style.display = "none";
 }
 
-function htsCloseModal() {
-  document.getElementById("htsModal").style.display = "none";
-}
-
 function rwCloseModal() {
   document.getElementById("rwModal").style.display = "none";
 }
@@ -54,22 +50,26 @@ function rwCloseModal() {
 function cesaCloseModal() {
   document.getElementById("cesaModal").style.display = "none";
 }
+
+function healthTradeCloseModal() {
+  document.getElementById("healthTrade").style.display = "none";
+}
 //End Close Modal functions
 
 
 // MTL functionality
 var slideIndex = 1;
-mtlGalerrySlide(slideIndex);
+mtlGalerySlide(slideIndex);
 
 function mtlPlusSlides(n) {
-  mtlGalerrySlide(slideIndex += n);
+  mtlGalerySlide(slideIndex += n);
 }
 
-function mtlGalerrySlide(n) {
-  mtlGalerrySlide(slideIndex = n);
+function mtlCurrentSlide(n) {
+  mtlGalerySlide(slideIndex = n);
 }
 
-function mtlGalerrySlide(n) {
+function mtlGalerySlide(n) {
   var i;
   var slides = document.getElementsByClassName("gallery");
   var dots = document.getElementsByClassName("demo");
@@ -91,17 +91,17 @@ function mtlGalerrySlide(n) {
 
 // jr functionality
 var slideIndex = 1;
-jrGalerrySlide(slideIndex);
+jrGalerySlide(slideIndex);
 
 function jrPlusSlides(n) {
-  jrGalerrySlide(slideIndex += n);
+  jrGalerySlide(slideIndex += n);
 }
 
-function jrGalerrySlide(n) {
-  jrGalerrySlide(slideIndex = n);
+function jrCurrentSlide(n) {
+  jrGalerySlide(slideIndex = n);
 }
 
-function jrGalerrySlide(n) {
+function jrGalerySlide(n) {
   var i;
   var slides = document.getElementsByClassName("jrElectrical");
   var dots = document.getElementsByClassName("jrDemo");
@@ -122,17 +122,17 @@ function jrGalerrySlide(n) {
 
 // new era functionality
 var slideIndex = 1;
-neweraGalerrySlide(slideIndex);
+neweraGalerySlide(slideIndex);
 
 function neweraPlusSlides(n) {
-  neweraGalerrySlide(slideIndex += n);
+  neweraGalerySlide(slideIndex += n);
 }
 
-function neweraGalerrySlide(n) {
-  neweraGalerrySlide(slideIndex = n);
+function neweraCurrentSlide(n) {
+  neweraGalerySlide(slideIndex = n);
 }
 
-function neweraGalerrySlide(n) {
+function neweraGalerySlide(n) {
   var i;
   var slides = document.getElementsByClassName("newera");
   var dots = document.getElementsByClassName("neweraDemo");
@@ -153,17 +153,17 @@ function neweraGalerrySlide(n) {
 
 // Electada functionality
 var slideIndex = 1;
-elecdataGalerrySlide(slideIndex);
+elecdataGalerySlide(slideIndex);
 
 function elecdataPlusSlides(n) {
-  elecdataGalerrySlide(slideIndex += n);
+  elecdataGalerySlide(slideIndex += n);
 }
 
-function elecdataGalerrySlide(n) {
-  elecdataGalerrySlide(slideIndex = n);
+function elecdataCurrentSlide(n) {
+  elecdataGalerySlide(slideIndex = n);
 }
 
-function elecdataGalerrySlide(n) {
+function elecdataGalerySlide(n) {
   var i;
   var slides = document.getElementsByClassName("elecdata");
   var dots = document.getElementsByClassName("elecdataDemo");
@@ -182,50 +182,20 @@ function elecdataGalerrySlide(n) {
 }
 // new Electada functionality
 
-// HTS functionality
-var slideIndex = 1;
-htsGalerrySlide(slideIndex);
-
-function htsPlusSlides(n) {
-  htsGalerrySlide(slideIndex += n);
-}
-
-function htsGalerrySlide(n) {
-  htsGalerrySlide(slideIndex = n);
-}
-
-function htsGalerrySlide(n) {
-  var i;
-  var slides = document.getElementsByClassName("hts");
-  var dots = document.getElementsByClassName("htsDemo");
-  var captionText = document.getElementById("htsCaption");
-  if (n > slides.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = slides.length }
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-  captionText.innerHTML = dots[slideIndex - 1].alt;
-}
-// End HTS functionality
 
 // RW functionality
 var slideIndex = 1;
-rwGalerrySlide(slideIndex);
+rwGalerySlide(slideIndex);
 
 function rwPlusSlides(n) {
-  rwGalerrySlide(slideIndex += n);
+  rwGalerySlide(slideIndex += n);
 }
 
-function htsGalerrySlide(n) {
-  rwGalerrySlide(slideIndex = n);
+function rwCurrentSlide(n) {
+  rwGalerySlide(slideIndex = n);
 }
 
-function rwGalerrySlide(n) {
+function rwGalerySlide(n) {
   var i;
   var slides = document.getElementsByClassName("rw");
   var dots = document.getElementsByClassName("rwDemo");
@@ -246,17 +216,17 @@ function rwGalerrySlide(n) {
 
 // CESA functionality
 var slideIndex = 1;
-cesaGalerrySlide(slideIndex);
+cesaGalerySlide(slideIndex);
 
 function cesaPlusSlides(n) {
-  cesaGalerrySlide(slideIndex += n);
+  cesaGalerySlide(slideIndex += n);
 }
 
-function cesaGalerrySlide(n) {
-  cesaGalerrySlide(slideIndex = n);
+function cesaCurrentSlide(n) {
+  cesaGalerySlide(slideIndex = n);
 }
 
-function cesaGalerrySlide(n) {
+function cesaGalerySlide(n) {
   var i;
   var slides = document.getElementsByClassName("cesa");
   var dots = document.getElementsByClassName("cesaDemo");
@@ -273,4 +243,35 @@ function cesaGalerrySlide(n) {
   dots[slideIndex - 1].className += " active";
   captionText.innerHTML = dots[slideIndex - 1].alt;
 }
-// End CESA functionality
+// End
+
+// Health Trade functionality
+var slideIndex = 1;
+healthTradeGalerySlide(slideIndex);
+
+function healthTradePlusSlides(n) {
+  healthTradeGalerySlide(slideIndex += n);
+}
+
+function healthTradeCurrentSlide(n) {
+  healthTradeGalerySlide(slideIndex = n);
+}
+
+function healthTradeGalerySlide(n) {
+  var i;
+  var slides = document.getElementsByClassName("healthTrade");
+  var dots = document.getElementsByClassName("healthTradeDemo");
+  var captionText = document.getElementById("healthTradeCaption");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+  captionText.innerHTML = dots[slideIndex - 1].alt;
+}
+// End health Trade functionality
