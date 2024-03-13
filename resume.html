@@ -52,7 +52,7 @@ https://templatemo.com/tm-556-catalog-z
                         <a class="nav-link nav-link-1" href="index.html">Photos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-2" href="blog">Blog</a>
+                        <a class="nav-link nav-link-2" onclick="blog()" href="#">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link-3 active" aria-current="page" href="about.html">Resume</a>
@@ -134,6 +134,11 @@ https://templatemo.com/tm-556-catalog-z
 
     <!-- Script para apresentacao do curriculo-->
     <script>
+
+        function blog() {
+            url = "http://josuemoura.github.io"
+            window.open(url,'_blank');
+        }
 
         var pdfDoc = null,
             pageNum = 1,
