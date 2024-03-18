@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="css/blgDev.css">
     <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.7.570/build/pdf.min.js"></script>
     <!--
     
@@ -21,7 +22,23 @@ https://templatemo.com/tm-556-catalog-z
 </head>
 
 <body>
+<!-- The Modal -->
+    <div id="myModal" class="modal">
 
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Josue Moura: Blog</h2>
+            </div>
+            <div class="modal-body">
+                <p>My sincere apology.</p>
+                <p>Blog under development.</p>
+            </div>
+
+        </div>
+
+    </div>
 
     <!-- Page Loader -->
     <div id="loader-wrapper">
@@ -52,7 +69,7 @@ https://templatemo.com/tm-556-catalog-z
                         <a class="nav-link nav-link-1" href="index.html">Photos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-2" onclick="blog()" href="#">Blog</a>
+                        <a id="blog" class="nav-link nav-link-2" href="#">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-link-3 active" aria-current="page" href="about.html">Resume</a>
@@ -130,7 +147,7 @@ https://templatemo.com/tm-556-catalog-z
     </script>
 
     <script src="pdfjs-dist/build/pdf.mjs"></script>
-
+    <script src="js/bgDev.js"></script>
 
     <!-- Script para apresentacao do curriculo-->
     <script>
