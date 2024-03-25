@@ -229,7 +229,7 @@ https://templatemo.com/tm-556-catalog-z
         }
         document.getElementById('zoomIn').addEventListener('click', zoomIn)
 
-        pdfjsLib.getDocument('Josue - Resume.pdf').promise.then((doc) => {
+        pdfjsLib.getDocument('main.pdf').promise.then((doc) => {
             pdfDoc = doc
             document.getElementById('page_count').textContent = doc.numPages;
             renderPage(pageNum)
